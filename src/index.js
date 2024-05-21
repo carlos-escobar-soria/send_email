@@ -2,10 +2,9 @@ const dotenvConfig = require('dotenv');
 const express = require('express')
 const bodyParser = require('body-parser');
 const app = express();
+dotenvConfig.config();
 
 const port = process.env.APP_PORT ;
-
-dotenvConfig.config();
 
 app.use(bodyParser.json());
 
